@@ -1,4 +1,4 @@
-//Aqui importaremos de las otras clases, ya que esta en packages, debemos importarlos.
+//Aquí importaremos de las otras clases, ya que está en packages, debemos importarlos.
 
 import articulos.articulo;
 import articulos.pelicula;
@@ -11,8 +11,8 @@ import usuarios.cliente;
 import static usuarios.administrador.rol.JEFE;
 
 void main() {
-//Aqui creamos 4 articulos, 2 pelicula y 2 videojuego, cada uno con sus datos.
-    //Luego creamos los clientes, pero les doy valor null, para que luego el administrador los articulos
+//Aquí creamos 4 articulos, 2 pelicula y 2 videojuegos, cada uno con sus datos.
+
     pelicula pl1 = new pelicula("INCEPTION", 2016,20.5, "Christopher Nolan", 138);
     pelicula pl2 = new pelicula("El Lobo de Wall Street", 2013, 20, "Julian Chavez",125);
 
@@ -26,7 +26,7 @@ void main() {
     libro lb1 = new libro("IT", 1996, 18, libro.genero.TERROR);
     libro lb2 = new libro("Maze runner", 2015, 8, libro.genero.ACCION);
 
-
+//Luego creamos los clientes, pero les doy valor null, para que luego el administrador los articulos
     cliente cl1 = new cliente("Julian","Julian123", 810, 2010,null, 1);
     cliente cl2 = new cliente("Melissa", "melissa2000", 999, 1979, null, 2 );
 
@@ -34,7 +34,7 @@ void main() {
     administrador ad1 = new administrador("admin123", "admin123",123, 1999 , JEFE);
 
 
- //Aqui decimos que ad1 (el admin que creamos) asignara al cliente 1(cl1) el Album2.
+ //aquí decimos que ad1 (el admin que creamos) asignara al cliente 1(cl1) el Album2.
     ad1.asignarArticulo(cl1, album2);
 
     System.out.println("El album Asignado a "+cl1.getNombreUsuario()+ " es " +cl1.getArticulo());
