@@ -1,15 +1,15 @@
 //package articulos, nos dice la carpeta que lo contiene
 package articulos;
 //atributos de la clase padre, que luego sera usada por el resto de clases hijas.
-public class articulo {
+public class Articulo {
     protected String titulo;
     private int anyoLanzamiento;
     protected double precioPorDia;
 
-    public articulo() {
+    public Articulo() {
     }
 
-    public articulo(String titulo, int anyoLanzamiento, double precioPorDia) {
+    public Articulo(String titulo, int anyoLanzamiento, double precioPorDia) {
         this.titulo = titulo;
         this.anyoLanzamiento = anyoLanzamiento;
         this.precioPorDia = precioPorDia;

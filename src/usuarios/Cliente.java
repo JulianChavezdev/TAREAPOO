@@ -1,25 +1,25 @@
 //package porque es la carpeta en la que esta contenida, e import, porque importaremos la clase articulo, del package articulos.
 package usuarios;
-import articulos.articulo;
+import articulos.Articulo;
 //atributos de clase
-public class cliente extends usuario{
-    private articulo articulo;
+public class Cliente extends Usuario {
+    private Articulo articulo;
     private int numSocio;
 
-    public cliente(String nombreUsuario, String contrasenya, int id, int anyoNacimiento, articulo articulo, int numSocio) {
+    public Cliente(String nombreUsuario, String contrasenya, int id, int anyoNacimiento, Articulo articulo, int numSocio) {
         super(nombreUsuario, contrasenya, id, anyoNacimiento);
         this.articulo = articulo;
         this.numSocio = numSocio;
     }
 
-    public cliente() {
+    public Cliente() {
     }
 
-    public articulo getArticulo() {
+    public Articulo getArticulo() {
         return articulo;
     }
 
-    public void setArticulo(articulo articulo) {
+    public void setArticulo(Articulo articulo) {
         this.articulo = articulo;
     }
 

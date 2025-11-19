@@ -1,20 +1,20 @@
 //package usuarios, porque asi se llama la carpeta en la que estan contenidos.
 package usuarios;
 //ATRIBUTOS DE USUARIO
-public class usuario {
+public class Usuario {
     protected String nombreUsuario;
     private String contrasenya;
     protected int id;
     private int anyoNacimiento;
 //constructores, getters y setters
-    public usuario(String nombreUsuario, String contrasenya, int id, int anyoNacimiento) {
+    public Usuario(String nombreUsuario, String contrasenya, int id, int anyoNacimiento) {
         this.nombreUsuario = nombreUsuario;
         this.contrasenya = contrasenya;
         this.id = id;
         this.anyoNacimiento = anyoNacimiento;
     }
 
-    public usuario() {
+    public Usuario() {
     }
 
     public String getNombreUsuario() {

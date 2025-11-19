@@ -1,19 +1,19 @@
 //package es la carpeta que contiene esta clase
 package articulos;
 //en todas las clases hijas, llevaran extends articulo, para decirnos que heredara atributos de la clase padre (articulo)
-public class albumMusica extends articulo{
+public class AlbumMusica extends Articulo {
     private String autor;
     private int numCanciones;
     private boolean single;
 
-    public albumMusica(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numCanciones, boolean single) {
+    public AlbumMusica(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numCanciones, boolean single) {
         super(titulo, anyoLanzamiento, precioPorDia);
         this.autor = autor;
         this.numCanciones = numCanciones;
         this.single = single;
     }
 
-    public albumMusica() {
+    public AlbumMusica() {
     }
 
     public String getAutor() {

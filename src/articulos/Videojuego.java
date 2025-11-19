@@ -1,19 +1,19 @@
 //package es la carpeta en donde esta contenida
 package articulos;
 //Atributos de videojuego
-public class videojuego extends articulo{
+public class Videojuego extends Articulo {
     private String director;
     private String plataformas;
     private int pegi;
 
-    public videojuego(String titulo, int anyoLanzamiento, double precioPorDia, String director, String plataformas, int pegi) {
+    public Videojuego(String titulo, int anyoLanzamiento, double precioPorDia, String director, String plataformas, int pegi) {
         super(titulo, anyoLanzamiento, precioPorDia);
         this.director = director;
         this.plataformas = plataformas;
         this.pegi = pegi;
     }
 
-    public videojuego() {
+    public Videojuego() {
     }
 
     public String getDirector() {

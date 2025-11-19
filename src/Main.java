@@ -1,37 +1,36 @@
 //Aquí importaremos de las otras clases, ya que está en packages, debemos importarlos.
 
-import articulos.articulo;
-import articulos.pelicula;
-import articulos.albumMusica;
-import articulos.libro;
-import articulos.videojuego;
-import usuarios.administrador;
-import usuarios.cliente;
+import articulos.Pelicula;
+import articulos.AlbumMusica;
+import articulos.Libro;
+import articulos.Videojuego;
+import usuarios.Administrador;
+import usuarios.Cliente;
 
-import static usuarios.administrador.rol.JEFE;
+import static usuarios.Administrador.Rol.JEFE;
 
 void main() {
 //Aquí creamos 4 articulos, 2 pelicula y 2 videojuegos, cada uno con sus datos.
 
-    pelicula pl1 = new pelicula("INCEPTION", 2016,20.5, "Christopher Nolan", 138);
-    pelicula pl2 = new pelicula("El Lobo de Wall Street", 2013, 20, "Julian Chavez",125);
+    Pelicula pl1 = new Pelicula("INCEPTION", 2016,20.5, "Christopher Nolan", 138);
+    Pelicula pl2 = new Pelicula("El Lobo de Wall Street", 2013, 20, "Julian Chavez",125);
 
 
-    videojuego vj1 = new videojuego("GTA V",2013, 18.4, "Rockstar","STEAM", 18);
-    videojuego vj2 = new videojuego("Fortnite", 2017, 16, "Epic Games", "Steam", 12);
+    Videojuego vj1 = new Videojuego("GTA V",2013, 18.4, "Rockstar","STEAM", 18);
+    Videojuego vj2 = new Videojuego("Fortnite", 2017, 16, "Epic Games", "Steam", 12);
 
-    albumMusica album1 = new albumMusica("tropicoqueta", 2020, 20.0, "Karol G", 12, false);
-    albumMusica album2 = new albumMusica("No le temas a la oscuridad", 2023, 12, "Feid", 8, true);
+    AlbumMusica album1 = new AlbumMusica("tropicoqueta", 2020, 20, "Karol G", 12, false);
+    AlbumMusica album2 = new AlbumMusica("No le temas a la oscuridad", 2023, 12, "Feid", 8, true);
 
-    libro lb1 = new libro("IT", 1996, 18, libro.genero.TERROR);
-    libro lb2 = new libro("Maze runner", 2015, 8, libro.genero.ACCION);
+    Libro lb1 = new Libro("IT", 1996, 18, Libro.Genero.TERROR);
+    Libro lb2 = new Libro("Maze runner", 2015, 8, Libro.Genero.ACCION);
 
 //Luego creamos los clientes, pero les doy valor null, para que luego el administrador los articulos
-    cliente cl1 = new cliente("Julian","Julian123", 810, 2010,null, 1);
-    cliente cl2 = new cliente("Melissa", "melissa2000", 999, 1979, null, 2 );
+    Cliente cl1 = new Cliente("Julian","Julian123", 810, 2010,null, 1);
+    Cliente cl2 = new Cliente("Melissa", "melissa2000", 999, 1979, null, 2 );
 
 
-    administrador ad1 = new administrador("admin123", "admin123",123, 1999 , JEFE);
+    Administrador ad1 = new Administrador("admin123", "admin123",123, 1999 , JEFE);
 
 
  //aquí decimos que ad1 (el admin que creamos) asignara al cliente 1(cl1) el Album2.

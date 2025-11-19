@@ -1,17 +1,17 @@
 //usamos package,por que es la carpeta que lo contiene
 package articulos;
 //atributos de la clase
-public class pelicula extends articulo{
+public class Pelicula extends Articulo {
     private String director;
     protected int duracion;
 
-    public pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String director, int duracion) {
+    public Pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String director, int duracion) {
         super(titulo, anyoLanzamiento, precioPorDia);
         this.director = director;
         this.duracion = duracion;
     }
 
-    public pelicula() {
+    public Pelicula() {
     }
 
     public String getDirector() {
